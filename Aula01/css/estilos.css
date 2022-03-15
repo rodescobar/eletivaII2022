@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Space";
+    src: url("fonts/SFAlienEncounters.ttf");
+}
+
+@font-face {
+    font-family: "Gotico";
+    src: url("fonts/Achafita.ttf");
+}
+
+*, html {
+    font-family: "Space";
+}
+
+body {
+    background: #ccc;
+    background-image: url("../img/fundo.gif");
+}
+
+.fundo {
+    margin: 0;
+}
+
+.area_jogo {
+    position: relative;
+    margin: auto;
+
+    background: url("../img/fundo.png");
+    background-position: -1280px;
+    width: 680px;
+    height: 350px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Salve a terra!</title>
+    	<link href="css/estilos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id='fundo'>
+			<div id='area_jogo' class='area_jogo'>
+				<div id='start' onclick='start()'>
+					<h1>Salve a terra</h1>
+					<p>Utilize as setas para se movimentar e a 
+					<b>Barra</b> para atiar</p>
+					<h2>Clique aqui para iniciar</h2>
+				</div>
+				<div id='gameover' style='display:none' onclick='reiniciar()'>
+					<h1>Salve a terra</h1>
+					<p>Morreu!!!!</p>
+					<br>Tente outra vez :(
+					<h2>Clique aqui para iniciar</h2>
+				</div>
+			</div>
+		</div>
+		<audio src="sons/jogo.mp3" preload="auto" id="somjogo"></audio>
+		<audio src="sons/laser_nave.mp3" preload="auto" id="lasernave"></audio>
+		<audio src="sons/tiro_player.wav" preload="auto" id="tiroplayer"></audio>
+		<audio src="sons/salva.mp3" preload="auto" id="salva"></audio>
+		<audio src="sons/explode.mp3" preload="auto" id="explode"></audio>
+		<audio src="sons/explode_player.mp3" preload="auto" id="explodeplayer"></audio>
+		<audio src="sons/grito.mp3" preload="auto" id="grito"></audio>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-collision.min.js"></script>
+		<script type="text/javascript" src="js/jogo.js"></script> 
+	</body>
+</html>

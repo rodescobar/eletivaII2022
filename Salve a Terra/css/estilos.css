@@ -1,0 +1,430 @@
+@font-face {
+  font-family: "Ufo";
+  src: url("SFAlienEncounters.ttf");
+}
+
+/*
+Areas do jogo
+*/
+
+body {
+	margin: 0px;
+	background: url("../img/fundo.gif");
+}
+
+#fundo {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.area_jogo {
+	position: absolute;
+	width: 680px;
+	height: 350px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25px;
+	background: url("../img/fundo.png");
+}
+
+#gameover, #start {
+	width: 350px;
+	height: 250px;
+	background: #fff;
+	margin-left: 150px;
+	margin-right: auto;
+	top: 25px;
+	text-align: center;
+	position: absolute;
+}
+
+#gameover, #start  h1 {
+	padding-top: 25px;
+	font-family: Ufo;
+	font-size: 36px;
+	font-style: italic;
+}
+
+
+#gameover, #start  p {
+	font-family: Ufo;
+	font-size: 24px;
+}
+
+#gameover, #start  h2 {
+	font-family: Ufo;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*
+Fim - Areas do jogo
+*/
+
+/*
+Jogadores
+*/
+.vida {
+    background-image: url("../img/vida.png");
+    background-position: 0px 52px;
+    height: 52px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 118px;
+	z-index: 1;
+}
+.player {
+	width: 111px;
+	height: 57px;
+	top: 75px;
+	left: 0px;
+	z-index: 10;
+	background-image: url("../img/jogador.png");
+	position: absolute;
+	animation:p_player .9s steps(7) infinite;
+
+       -webkit-animation: p_player .9s steps(7) infinite;
+       -moz-animation: p_player .9s steps(7) infinite;
+       -ms-animation: p_player .9s steps(7) infinite;
+       -o-animation: p_player .9s steps(7) infinite;
+}
+
+@keyframes p_player {
+	from {background-position:0px;}
+	to {background-position:-763px;}
+}
+
+
+@-webkit-keyframes p_player {
+   from { background-position:0px; }
+     to { background-position: -763px; }
+}
+
+@-moz-keyframes p_player {
+   from { background-position:0px; }
+     to { background-position: -763px; }
+}
+
+@-ms-keyframes p_player {
+   from { background-position:0px; }
+     to { background-position: -763px; }
+}
+
+@-o-keyframes p_player {
+   from { background-position:0px; }
+     to { background-position: -763px; }
+}
+
+.player_explode {
+	width: 103px;
+	height: 58px;
+	top: 10px;
+	left: 0px;
+	background-image: url("../img/jogador_explode.png");
+	position: relative;
+	animation:pe_player .9s steps(3) infinite;
+
+       -webkit-animation: pe_player .9s steps(3) infinite;
+       -moz-animation: pe_player .9s steps(3) infinite;
+       -ms-animation: pe_player .9s steps(3) infinite;
+       -o-animation: pe_player .9s steps(3) infinite;
+}
+
+@keyframes pe_player {
+	from {background-position:0px;}
+	to {background-position:-309px;}
+}
+
+
+@-webkit-keyframes pe_player {
+   from { background-position:0px; }
+     to { background-position: -309px; }
+}
+
+@-moz-keyframes pe_player {
+   from { background-position:0px; }
+     to { background-position: -309px; }
+}
+
+@-ms-keyframes pe_player {
+   from { background-position:0px; }
+     to { background-position: -309px; }
+}
+
+@-o-keyframes pe_player {
+   from { background-position:0px; }
+     to { background-position: -309px; }
+}
+
+
+.nave {
+	width: 51px;
+	height: 48px;
+	margin-top: 10px;
+	left: 630px;
+	position: absolute;
+	background-image: url("../img/inimigo.png");
+	animation:p_nave 2s steps(12) infinite;
+
+       -webkit-animation: p_nave 2s steps(12) infinite;
+       -moz-animation: p_nave 2s steps(12) infinite;
+       -ms-animation: p_nave 2s steps(12) infinite;
+       -o-animation: p_nave 2s steps(12) infinite;
+}
+
+@keyframes p_nave {
+	from {background-position:0px;}
+	to {background-position:-599px;}
+}
+
+
+@-webkit-keyframes p_nave {
+   from { background-position:0px; }
+     to { background-position: -599px; }
+}
+
+@-moz-keyframes p_nave {
+   from { background-position:0px; }
+     to { background-position: -599px; }
+}
+
+@-ms-keyframes p_nave {
+   from { background-position:0px; }
+     to { background-position: -599px; }
+}
+
+@-o-keyframes p_nave {
+   from { background-position:0px; }
+     to { background-position: -599px; }
+}
+
+.nave_explode {
+	width: 51px;
+	height: 48px;
+	margin-top: 10px;
+	left: 630px;
+	position: absolute;
+	background-image: url("../img/inimigo_explode.png");
+	animation:pe_nave 2s steps(4) infinite;
+
+       -webkit-animation: pe_nave 2s steps(4) infinite;
+       -moz-animation: pe_nave 2s steps(4) infinite;
+       -ms-animation: pe_nave 2s steps(4) infinite;
+       -o-animation: pe_nave 2s steps(4) infinite;
+}
+
+@keyframes pe_nave {
+	from {background-position:0px;}
+	to {background-position:-193px;}
+}
+
+
+@-webkit-keyframes pe_nave {
+   from { background-position:0px; }
+     to { background-position: -193px; }
+}
+
+@-moz-keyframes pe_nave {
+   from { background-position:0px; }
+     to { background-position: -193px; }
+}
+
+@-ms-keyframes pe_nave {
+   from { background-position:0px; }
+     to { background-position: -193px; }
+}
+
+@-o-keyframes pe_nave {
+   from { background-position:0px; }
+     to { background-position: -193px; }
+}
+
+
+.pessoa {
+	width: 34px;
+	height: 51px;
+	top: 280px;
+	left: 0;
+	position: absolute;
+	background-image: url("../img/pessoa.png");
+	animation:p_pessoa .9s steps(12) infinite;
+
+       -webkit-animation: p_pessoa .9s steps(12) infinite;
+       -moz-animation: p_pessoa .9s steps(12) infinite;
+       -ms-animation: p_pessoa .9s steps(12) infinite;
+       -o-animation: p_pessoa .9s steps(12) infinite;
+}
+
+@keyframes p_pessoa {
+	from {background-position:0px;}
+	to {background-position:-374px;}
+}
+
+
+@-webkit-keyframes p_pessoa {
+   from { background-position:0px; }
+     to { background-position: -374px; }
+}
+
+@-moz-keyframes p_pessoa {
+   from { background-position:0px; }
+     to { background-position: -374px; }
+}
+
+@-ms-keyframes p_pessoa {
+   from { background-position:0px; }
+     to { background-position: -374px; }
+}
+
+@-o-keyframes p_pessoa {
+   from { background-position:0px; }
+     to { background-position: -374px; }
+}
+
+.tanque {
+	width: 75px;
+	height: 49px;
+	top: 280px;
+	left: 600px;
+	position: absolute;
+	background-image: url("../img/tanque.png");
+	animation:p_tanque 2s steps(5) infinite;
+
+       -webkit-animation: p_tanque 2s steps(5) infinite;
+       -moz-animation: p_tanque 2s steps(5) infinite;
+       -ms-animation: p_tanque 2s steps(5) infinite;
+       -o-animation: p_tanque 2s steps(5) infinite;
+}
+
+@keyframes p_tanque {
+	from {background-position:0px;}
+	to {background-position:-380px;}
+}
+
+
+@-webkit-keyframes p_tanque {
+   from { background-position:0px; }
+     to { background-position: -380px; }
+}
+
+@-moz-keyframes p_tanque {
+   from { background-position:0px; }
+     to { background-position: -380px; }
+}
+
+@-ms-keyframes p_tanque {
+   from { background-position:0px; }
+     to { background-position: -380px; }
+}
+
+@-o-keyframes p_tanque {
+   from { background-position:0px; }
+     to { background-position: -380px; }
+}
+/*Fim  Jogadores */
+
+/* tiros */
+.tiro_nave {
+	width: 34px;
+	height: 47px;
+	left: 630px;
+	top: 10px;
+	position: absolute;
+	background-image: url("../img/inimigo_tiro.png");
+	animation:p_ini_tiro 0.6s steps(5) ;
+
+       -webkit-animation: p_ini_tiro 0.6s steps(5) infinite;
+       -moz-animation: p_ini_tiro 0.6s steps(5) infinite;
+       -ms-animation: p_ini_tiro 0.6s steps(5) infinite;
+       -o-animation: p_ini_tiro 0.6s steps(5) infinite;	
+}
+
+
+@keyframes p_ini_tiro {
+	from {background-position:0px;}
+	to {background-position:-166px;}
+}
+
+
+@-webkit-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+@-moz-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+@-ms-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+@-o-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+.tiro {
+	width: 40px;
+	height: 23px;
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	background-image: url("../img/tiro.png");
+}
+/* fim tiros */
+
+.tanque_explosao {
+	width: 63px;
+	height: 59px;
+	top: 280px;
+	left: 600px;
+	position: absolute;
+	background-image: url("../img/explosao.png");
+	animation:e_tanque 2s steps(4);
+
+       -webkit-animation: e_tanque 2s steps(4) infinite;
+       -moz-animation: e_tanque 2s steps(4) infinite;
+       -ms-animation: e_tanque 2s steps(4) infinite;
+       -o-animation: e_tanque 2s steps(4) infinite;	
+}
+
+@keyframes e_tanque {
+	from {background-position:0px;}
+	to {background-position:-255px;}
+}
+
+
+@-webkit-keyframes e_tanque {
+   from { background-position:0px; }
+     to { background-position: -255px; }
+}
+
+@-moz-keyframes e_tanque {
+   from { background-position:0px; }
+     to { background-position: -255px; }
+}
+
+@-ms-keyframes e_tanque {
+   from { background-position:0px; }
+     to { background-position: -255px; }
+}
+
+@-o-keyframes e_tanque {
+   from { background-position:0px; }
+     to { background-position: -255px; }
+}
+
+.pontos {
+	width: 150px;
+	height: 50px;
+	color: #fff;
+	margin-left: 520px;
+	top:5px;
+	text-align: center;
+	position: absolute;
+}
