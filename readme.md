@@ -27,6 +27,6 @@ Estudo avançado de HTML, CSS e JavaScript
 
 ## Aula 05 - 05/04/2022
 - Remoção de nave ao chegar no final do mapa
-- Nave nascendo aleatóriamente
+- Nave nascendo aleatoriamente
 - Criação e movimentação dos tiros inimigos
 - Criação e movimentação dos tiros do player.
