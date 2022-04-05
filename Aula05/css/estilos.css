@@ -222,6 +222,52 @@ Aula 04
     top: 50px;
 }
 
+/*****************************************
+Aula 05
+*****************************************/
+.tiro_inimigo {
+    width: 34px;
+    height: 47px;
+    top: 0;
+    left: 630px;
+    position: absolute;
+    background-image: url("../img/inimigo_tiro.png");
+ 
+    animation: p_ini_tiro 0.2s steps(5);
+    -webkit-animation: p_ini_tiro 0.2s steps(5) infinite;
+    -moz-animation: p_ini_tiro 0.2s steps(5) infinite;
+    -ms-animation: p_ini_tiro 0.2s steps(5) infinite;
+    -o-animation: p_ini_tiro 0.2s steps(5) infinite;
+}
 
+@keyframes p_ini_tiro {
+    from { background-position: 0; }
+    to { background-position: -166px; }
+}
 
+@-moz-keyframes p_ini_tiro {
+    from { background-position: 0; }
+    to { background-position: -166px; }
+}
 
+@-webkit-keyframes p_ini_tiro {
+    from { background-position: 0; }
+    to { background-position: -166px; }
+}
+
+@-ms-keyframes p_ini_tiro {
+    from { background-position: 0; }
+    to { background-position: -166px; }
+}
+
+@-o-keyframes p_ini_tiro {
+    from { background-position: 0; }
+    to { background-position: -166px; }
+}
+
+.tiro {
+    width: 40px;
+    height: 23px;
+    position: absolute;
+    background-image: url("../img/tiro.png");
+}

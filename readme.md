@@ -15,3 +15,18 @@ Estudo avançado de HTML, CSS e JavaScript
 - Criação de divs reprsentando: jogador e npcs
 - Criação de CSS para animação de SPRITES de jogador e npcs
 - Criação e itens dinamicamente no HTML através de código em JavaScript
+
+## Aula 04 - 15/03/2022
+- Movimentação do player
+- Teclas pressionadas
+
+## Aula TechnoITE - 22/03/2022
+
+## Aula 04.1 - 29/03/2022
+- Movimentação de: nave inimiga, tanque, boneco
+
+## Aula 05 - 05/04/2022
+- Remoção de nave ao chegar no final do mapa
+- Nave nascendo aleatóriamente
+- Criação e movimentação dos tiros inimigos
+- Criação e movimentação dos tiros do player.
