@@ -30,3 +30,8 @@ Estudo avançado de HTML, CSS e JavaScript
 - Nave nascendo aleatoriamente
 - Criação e movimentação dos tiros inimigos
 - Criação e movimentação dos tiros do player.
+
+## Aula 06 - 12/04/2022
+- Colisão player tiro
+ - player nave
+ - nave tiro
