@@ -278,6 +278,7 @@ Aula 06
 .explodePlayer {
     width: 103px;
     height: 58px;
+    position: relative;
     background-image: url("../img/jogador_explode.png");
 
     animation: e_player .9s steps(3) infinite;
@@ -307,4 +308,17 @@ Aula 06
 @-webkit-keyframes  e_player {
     from { background-position: 0px; }
     to { background-position: -309px; }
+}
+
+.naveExplode {
+    width: 51px;
+    height: 48px;
+    position: relative;
+
+    animation: ex_nave 2s steps(4) infinite;
+}
+
+@keyframes ex_nave {
+    from { background-position: 0px; }
+    to { background-position: -193px; }
 }

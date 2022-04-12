@@ -178,7 +178,7 @@ function colisao() {
     var c_t_n = $("#nave").collision($('#tiro')).length
     var c_t_v = $("#tanque").collision($('#tiro')).length
 
-    if ( c_p_n > 0 ) {
+    if ( c_p_n > 0 || c_p_t > 0 || c_p_v > 0 ) {
         explodirPlayer()
     }
         
@@ -188,6 +188,22 @@ function explodirPlayer() {
     //Se não existir a DIV explodePlayer
     if ( $("#explodePlayer").length < 1 ) {
         $("#area_jogo").append('<div class="explodePlayer" id="explodePlayer"></div>')
+
+        var player_top = parseInt( $('#player').css('top') )
+        var player_left = parseInt( $('#player').css('left') )
+
+        $('#explodePlayer').css("top", player_top)
+        $('#explodePlayer').css("left", player_left)
+
+        $('#player').remove()
+
+        setTimeout(
+            function() {
+                $('#explodePlayer').remove()
+                $("#area_jogo").append('<div class="player" id="player"></div>')
+            },
+            2000
+        )
     }
 }
 
