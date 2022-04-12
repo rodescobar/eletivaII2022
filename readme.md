@@ -32,6 +32,12 @@ Estudo avançado de HTML, CSS e JavaScript
 - Criação e movimentação dos tiros do player.
 
 ## Aula 06 - 12/04/2022
-- Colisão player tiro
- - player nave
- - nave tiro
+- Colisão player Tiro / Nave / Tanque
+- Colisão tiro player na nave
+- Colisão tiro player no tanque
+
+## Aula 07 - 19/04/2022
+- Pontuação
+- Vida do Player
+- Fase
+- Sons
