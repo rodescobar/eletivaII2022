@@ -37,6 +37,9 @@ Estudo avançado de HTML, CSS e JavaScript
 - Colisão tiro player no tanque
 
 ## Aula 07 - 19/04/2022
+- Alunos terminando colisões Aula 06
+
+## Aula 08 - 26/04/2022
 - Pontuação
 - Vida do Player
 - Fase
