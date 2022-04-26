@@ -40,7 +40,11 @@ Estudo avançado de HTML, CSS e JavaScript
 - Alunos terminando colisões Aula 06
 
 ## Aula 08 - 26/04/2022
-- Pontuação
 - Vida do Player
-- Fase
 - Sons
+- Gameover (terminar)
+
+## Aula 09 - 03/05/2022
+- Pontuação
+- Fase
+- Gameover
