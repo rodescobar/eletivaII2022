@@ -48,3 +48,6 @@ Estudo avançado de HTML, CSS e JavaScript
 - Pontuação
 - Fase
 - Gameover
+
+## Aula 10 - 10/05/2022, 17/05/2022, 24/05/2022
+- Construção de jogo
