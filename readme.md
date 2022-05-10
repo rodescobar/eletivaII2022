@@ -53,3 +53,4 @@ Estudo avançado de HTML, CSS e JavaScript
 - Construção de jogo
 
 ## Imagens que podem ser utilizadas para o trabalho
+[Link](https://github.com/rodescobar/eletivaII2022/tree/main/Imagens%20para%20Trabalho)
