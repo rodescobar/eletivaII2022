@@ -51,3 +51,5 @@ Estudo avançado de HTML, CSS e JavaScript
 
 ## Aula 10 - 10/05/2022, 17/05/2022, 24/05/2022
 - Construção de jogo
+
+## Imagens que podem ser utilizadas para o trabalho
